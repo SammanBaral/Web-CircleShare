@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { FiEdit, FiMail, FiPhone, FiUser, FiLogOut } from 'react-icons/fi';
+import { FiEdit, FiLogOut, FiMail, FiPhone, FiUser } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
 import BottomNav from '../components/BottomNav';
 import Navbar from '../components/Navbar';
@@ -15,22 +15,22 @@ const ProfilePage = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [requests, setRequests] = useState([
-        { id: "67c3cca6f43d09bc0ba6ef39", item: 'Electric Dryer', days: 3, status: 'pending' },
+        { id: "67c3722aab3b74a81f5ac7a5", item: 'Power Drill', days: 3, status: 'pending' },
         { id: "67c37203ab3b74a81f5ac7a3", item: 'Pressure Washer', days: 5, status: 'pending' },
     ]);
     const [profileUpdated, setProfileUpdated] = useState(false);
     const [items, setItems] = useState([
-        { id: "67c3cca6f43d09bc0ba6ef39", name: 'Electric Dryer', editable: false },
+        { id: "67c3cca6f43d09bc0ba6ef39", name: 'Power Drill', editable: false },
         { id: "67c37203ab3b74a81f5ac7a3", name: 'Pressure Washer', editable: false },
     ]);
 
     useEffect(() => {
         // Simulate fetching user data
         const user = {
-            firstName: 'John',
-            lastName: 'Doe',
-            email: 'john.doe@example.com',
-            phone: '123-456-7890',
+            firstName: 'Samman',
+            lastName: 'Baral',
+            email: 'samman@gmail.com',
+            phone: '9800000000',
         };
         setFirstName(user.firstName);
         setLastName(user.lastName);

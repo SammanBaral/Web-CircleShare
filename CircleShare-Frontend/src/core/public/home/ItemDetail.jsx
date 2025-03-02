@@ -11,10 +11,8 @@ const ItemDetails = () => {
     const [isRequestPending, setIsRequestPending] = useState(false);
 
     useEffect(() => {
-        // Fetch item details based on the item ID
         const fetchItemDetails = async () => {
             try {
-                // Manually setting the details for "Power Drill"
                 if (id === "1") {
                     const powerDrill = {
                         id: 1,

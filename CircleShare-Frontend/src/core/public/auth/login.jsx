@@ -94,7 +94,7 @@ const LoginPage = () => {
 
         {/* Right Side - Image */}
         <div className="hidden md:block md:w-2/5 bg-gray-200 flex items-center justify-center">
-          <img src={"src/assets/image/dog/download1.jpeg"} alt="Login Illustration" className="object-cover w-full h-full" />
+          <img src={"src/assets/image/image.png"} alt="Login Illustration" className="object-cover w-full h-full" />
         </div>
       </div>
 

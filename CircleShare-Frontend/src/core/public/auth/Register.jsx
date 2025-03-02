@@ -38,7 +38,7 @@ const Register = () => {
         {/* Left Side - Form */}
         <div className="w-full md:w-3/5 p-8">
           <div className="text-center mb-6">
-            <img src={logo} alt="Logo" className="h-20 w-auto mx-auto mb-4" />
+            <img src={logo} alt="Logo" className="h-24 w-auto mx-auto mb-4" />
             <h1 className="text-3xl font-bold text-neutral-900">Create your account</h1>
             <p className="text-neutral-600">Join our community of sharers today</p>
           </div>
@@ -97,7 +97,7 @@ const Register = () => {
 
         {/* Right Side - Image */}
         <div className="hidden md:block md:w-2/5 bg-gray-300 flex items-center justify-center">
-          <span className="text-gray-500 text-lg">Image</span>
+          <img src={"src/assets/image/image.png"} alt="Side Image" className="h-full w-auto object-cover" />
         </div>
       </div>
     </div>

@@ -26,7 +26,7 @@ const EditItemPage = () => {
         // Fetch the item details from the backend using the id
         const fetchItem = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/api/items/67c37203ab3b74a81f5ac7a3`);
+                const response = await fetch(`http://localhost:3000/api/items/67c3722aab3b74a81f5ac7a5`);
                 const data = await response.json();
                 setItem(data);
                 setLoading(false);
@@ -58,7 +58,7 @@ const EditItemPage = () => {
         });
 
         try {
-            const response = await fetch(`http://localhost:3000/api/items/67c37203ab3b74a81f5ac7a3`, {
+            const response = await fetch(`http://localhost:3000/api/items/67c3722aab3b74a81f5ac7a5`, {
                 method: 'PUT',
                 body: itemData,
             });
